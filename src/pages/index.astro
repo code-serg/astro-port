@@ -1,5 +1,6 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+const name = 'Astronaut';
 ---
 
 <html lang="en">
@@ -11,6 +12,8 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Astro the {name}</h1>
+		<MainLayout myProps={"hey hey hey"}>
+			<p>Welcome to Astro, {name}!</p>
 	</body>
 </html>

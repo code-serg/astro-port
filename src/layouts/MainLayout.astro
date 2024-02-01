@@ -1,0 +1,11 @@
+---
+const {myProps} = Astro.props;
+---
+
+<html>
+  <body>
+    {myProps}
+    
+    <p> Props above, slot below</p>
+    <slot id="astro-test"></slot>
+</html>
