@@ -1,19 +1,12 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-const name = 'Astronaut';
+import MainLayout from "../layouts/MainLayout.astro";
+const name = "Astronaut";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro the {name}</h1>
-		<MainLayout myProps={"hey hey hey"}>
-			<p>Welcome to Astro, {name}!</p>
-	</body>
-</html>
+<MainLayout
+  title="Home - codeserg"
+  seoTitle="Sergio Souza, Software Engineer Portfolio"
+  seoDesc="Software Engineer with expertise in React, Next.js and Fullstack Development"
+>
+  <p>Welcome to Astro, {name}!</p>
+</MainLayout>

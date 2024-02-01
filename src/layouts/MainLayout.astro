@@ -1,11 +1,11 @@
 ---
-const {myProps} = Astro.props;
+import MainHead from "./MainHead.astro";
+const { title, seoTitle, seoDesc } = Astro.props;
 ---
 
 <html>
+  <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
   <body>
-    {myProps}
-    
-    <p> Props above, slot below</p>
-    <slot id="astro-test"></slot>
+    <slot id="astro-test" />
+  </body>
 </html>
