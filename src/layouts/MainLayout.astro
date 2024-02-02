@@ -5,7 +5,7 @@ const { title, seoTitle, seoDesc } = Astro.props;
 
 <html>
   <MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
-  <body>
+  <body class="bg-slate-900 text-white">
     <slot id="astro-test" />
     <style>
       body {
