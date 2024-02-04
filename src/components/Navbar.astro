@@ -4,18 +4,22 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 <header class="md:flex p-5 gap-5">
   <Astronav>
-    <div class="flex w-full justify-between">
-      <a href="/">CS</a>
+    <div class="flex w-full justify-between items-center">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/public/logo/logo-cs.png" width="50px" height="50px" />
+        <div class="hidden md:block text-2xl font-bold">codeSerg</div>
+      </a>
       <div class="block md:hidden">
         <MenuIcon class="w-4 h-4 text-white-800" />
       </div>
+      <MenuItems class="hidden md:flex">
+        <ul class="flex flex-col md:flex-row md:gap-5">
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </MenuItems>
     </div>
-    <MenuItems class="hidden md:flex">
-      <ul class="flex flex-col md:flex-row md:gap-5">
-        <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
-    </MenuItems>
-  </Astronav>
-</header>
+    </Astronav>
+  </header>
+  
