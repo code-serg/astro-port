@@ -9,27 +9,27 @@ import MainLayout from "../layouts/MainLayout.astro";
 >
   <div class="w-8/12 md:w-6/12 mx-auto">
     <h1 class="text-4xl md:text-5xl text-center">Sample Projects</h1>
-    <div>
-      <p>
-        A collection of projects built with the MERN stack, React, Next.js,
-        Astro and more.
-      </p>
-      <a>
+    <p>
+      A collection of projects built with the MERN stack, React, Next.js, Astro
+      and more.
+    </p>
+    <div class="grid md:grid-cols-2 gap-2">
+      <a href="/projects/mern-commerce">
         <img
           class="rounded"
-          src="/public/images/mern-commerce-01.png"
+          src="images/mern-commerce.png"
           width="300px"
           height="300px"
           alt="MERN Commerce"
         />
       </a>
-      <a>
+      <a href="/projects/showcase-next-sanity">
         <img
           class="rounded"
-          src="/public/images/showcase-next-sanity-01.png"
+          src="images/showcase-next-sanity.png"
           width="300px"
           height="300px"
-          alt="MERN Commerce"
+          alt="Next.js with Sanity"
         />
       </a>
     </div>
