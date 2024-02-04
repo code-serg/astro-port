@@ -2,6 +2,36 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout>
-  <h1>Projects</h1>
+<MainLayout
+  title="Sample Projects"
+  seoTitle="Projects with React, Next.js, Astro and more"
+  seoDesc="A collection of projects built with the MERN stack, React, Next.js, Astro and more"
+>
+  <div class="w-8/12 md:w-6/12 mx-auto">
+    <h1 class="text-4xl md:text-5xl text-center">Sample Projects</h1>
+    <p>
+      A collection of projects built with the MERN stack, React, Next.js, Astro
+      and more.
+    </p>
+    <div class="grid md:grid-cols-2 gap-2">
+      <a href="/projects/mern-commerce">
+        <img
+          class="rounded"
+          src="images/mern-commerce.png"
+          width="300px"
+          height="300px"
+          alt="MERN Commerce"
+        />
+      </a>
+      <a href="/projects/showcase-next-sanity">
+        <img
+          class="rounded"
+          src="images/showcase-next-sanity.png"
+          width="300px"
+          height="300px"
+          alt="Next.js with Sanity"
+        />
+      </a>
+    </div>
+  </div>
 </MainLayout>
