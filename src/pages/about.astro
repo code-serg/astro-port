@@ -2,6 +2,27 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout>
-  <h1>About</h1>
+<MainLayout
+  title="About"
+  seoTitle="About Sergio Souza, Software Developer"
+  seoDesc={"Hello. My name is Sergio Souza. I'm an experienced software developer and always looking to learn new things."}
+>
+<div class="w-6/12 mx-auto">
+
+  <h1 class="text-4xl">About</h1>
+  <img src="/images/sergio-souza.jpg" alt="Sergio Souza" class="rounded-full w-32 h-32 mx-auto mt-4" />
+  <p class="mt-4">
+    Hello. My name is Sergio Souza. I'm an experienced software developer with passion for web development and open source software.
+  </p>
+  <p class="mt-4">
+    I have a degree in Computer Science and I've been working with software and IT services for over 10 years. I've worked with a variety of technologies and programming languages, but I'm currently focused on JavaScript and its ecosystem.
+  </p>
+  <p class="mt-4">
+    I'm always looking for new ways to improve my skills and I love to get in the proverbial rabbit hole of new technologies.
+  </p>
+  <p class="mt-4">
+    If you want to know more about me or have any questions, feel free to <a href="/contact">contact me</a>.
+  </p>
+
+</div>
 </MainLayout>
