@@ -11,7 +11,7 @@ export default {
             ? `var(${opacityVariable}, ${defaultOpacity})`
             : defaultOpacity;
 
-          return `rgba(51, 255, 255, ${opacity})`;
+          return `rgba(5, 230, 230, ${opacity})`;
         },
       },
     },
