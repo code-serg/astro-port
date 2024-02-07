@@ -25,31 +25,48 @@ import MainLayout from "../layouts/MainLayout.astro";
       <p>
         These applications were successfully <span class="underline">deployed in retail chains accross the United States and Canada.</span> </p>
       <p>
-        The tech stack includes <strong>React.js, GitHub, Jira, MongoDB Compass, Postman, and more.</strong>
+        The tech stack and tools include <strong>React.js, MongoDB, GitHub, Jira, Postman</strong>, and more.
       </p>
     <h1 class="text-2xl md:text-4xl text-center">...more recently</h1>
     <p>
       I have been working with <strong>Next.js, Astro, Tailwind, Sanity.io </strong> and others to build modern web applications.
     </p>
-    <div class="grid md:grid-cols-2 gap-2">
-      <a href="/projects/mern-commerce">
+    <div class="grid xl:grid-cols-2 gap-4">
+      <div class="border-2 border-gray-600 rounded shadow-lg">
         <img
-          class="rounded"
+          class="rounded w-full object-cover"
           src="images/mern-commerce.png"
           width="300px"
           height="300px"
           alt="MERN Commerce"
         />
-      </a>
-      <a href="/projects/showcase-next-sanity">
-        <img
-          class="rounded"
-          src="images/showcase-next-sanity.png"
-          width="300px"
-          height="300px"
-          alt="Next.js with Sanity"
-        />
-      </a>
+        <div class="p-4">
+          <h2 class="font-bold text-xl mb-2">MERN Commerce</h2>
+          <p class="text-gray-400 text-base">
+            An e-commerce application built with the MERN stack.
+          </p>
+          <a href="https://github.com/code-serg/ecommerce-01" class="text-custom-teal hover:underline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="border-2 border-gray-600 rounded shadow-lg">
+          <img
+            class="rounded w-full object-cover"
+            src="images/showcase-next-sanity.png"
+            width="300px"
+            height="300px"
+            alt="Next.js with Sanity"
+          />
+          <div class="p-4">
+            <h2 class="font-bold text-xl mb-2">Next.js with Sanity.io</h2>
+            <p class="text-gray-400 text-base">
+              A Next.js application with a headless CMS.
+            </p>
+          <a href="https://github.com/code-serg/showcase-next-sanity" class="text-custom-teal hover:underline" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+
+          </div>
+      </div>
+
     </div>
   </div>
 </MainLayout>
