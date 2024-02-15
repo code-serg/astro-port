@@ -7,12 +7,12 @@ import MainLayout from "../layouts/MainLayout.astro";
   seoTitle="codeserg - Software Engineer Portfolio"
   seoDesc="Software Engineer with expertise in React, Next.js and Fullstack Development"
 >
-  <div class="w-8/12 md:w-6/12 mx-auto">
-    <h1 class="text-4xl md:text-5xl text-center">Hi 👋, I'm Sergio.</h1>
-
+  <div class="w-8/12 md:w-6/12 mx-auto my-5">
+    <h1 class="text-3xl md:text-4xl text-center font-bold">Hi 👋</h1>
+    <p class="mt-10 md:mt-20 text-center">I am a <strong>Full Stack Software Developer.</strong> </p>
+    <p class="mt-4 text-center">I work with <strong>React, Next.js, Node.js, MongoDB, Express,</strong> </p>
     <div id="typed-strings">
-      <p>Hi. I am a <strong>Software Developer</strong></p>
-      <p>I work with React, Next.js, Node.js...</p>
+      <p>and more...</p>
     </div>
     <div class="text-center mt-5">
       <span id="typed"></span>
@@ -24,7 +24,6 @@ import MainLayout from "../layouts/MainLayout.astro";
   import Typed from "typed.js";
   var typed = new Typed("#typed", {
     stringsElement: "#typed-strings",
-    typeSpeed: 50,
-    loop: true,
+    typeSpeed: 60,
   });
 </script>
