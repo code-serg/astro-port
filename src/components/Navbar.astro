@@ -4,22 +4,25 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 <header class="md:flex p-5 gap-5">
   <Astronav>
-    <div class="flex w-11/12 md:w-9/12 lg:w-8/12 justify-between items-center mx-auto min-h-[100px]">
+    <div class="flex flex-grow justify-between items-center mx-auto">
       <a href="/" class="flex items-center gap-2">
         <img src="/logo/logo-cs.png" width="50px" height="50px" />
-        <div class="hidden sm:block text-xl font-bold text-custom-teal text-opacity-75">codeserg.io</div>
+        <div class="text-xl font-bold text-custom-teal text-opacity-75">
+          codeserg.io
+        </div>
       </a>
       <div class="block md:hidden">
         <MenuIcon class="w-4 h-4 text-white-800" />
       </div>
-      <MenuItems class="hidden md:flex">
-        <ul class="flex flex-col md:flex-row md:gap-5">
-          <li><a href="/" class="hover:text-custom-teal">Home</a></li>
-          <li><a href="/projects" class="hover:text-custom-teal">Projects</a></li>
-          <li><a href="/about"class="hover:text-custom-teal">About</a></li>
-        </ul>
-      </MenuItems>
     </div>
+    <MenuItems class="hidden md:flex items-center">
+      <ul class="flex flex-col p-3 gap-3 md:flex-row md:gap-5">
+        <li><a href="/" class="hover:text-custom-teal">Home</a></li>
+        <li>
+          <a href="/projects" class="hover:text-custom-teal">Projects</a>
+        </li>
+        <li><a href="/about" class="hover:text-custom-teal">About</a></li>
+      </ul>
+    </MenuItems>
   </Astronav>
 </header>
-  
